@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:diamond_sword" },
+    { "item": "rpgmod:mana_crystal" },
+    { "item": "rpgmod:shadow_essence" }
+  ],
+  "result": {
+    "item": "rpgmod:magic_sword",
+    "count": 1
+  }
+}

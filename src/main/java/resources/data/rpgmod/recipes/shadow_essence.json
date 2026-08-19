@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:coal" },
+    { "item": "minecraft:ink_sac" },
+    { "item": "minecraft:gunpowder" }
+  ],
+  "result": {
+    "item": "rpgmod:shadow_essence",
+    "count": 2
+  }
+}
