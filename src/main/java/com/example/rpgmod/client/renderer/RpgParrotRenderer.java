@@ -10,13 +10,14 @@ import net.minecraft.world.entity.animal.Parrot;
 /**
  * Parrot gövde ailesindeki tüm RPG mob'ları için tekrar kullanılabilir renderer.
  * Vanilla model geometrisini kullanir, sadece dokusu (texture) farklidir.
+ * (ParrotModel generic olmadigi icin ikinci tip parametresi sabittir.)
  */
-public class RpgParrotRenderer<T extends Parrot> extends MobRenderer<T, ParrotModel<T>> {
+public class RpgParrotRenderer<T extends Parrot> extends MobRenderer<T, ParrotModel> {
 
     private final ResourceLocation texture;
 
     public RpgParrotRenderer(EntityRendererProvider.Context context, ResourceLocation texture) {
-        super(context, new ParrotModel<>(context.bakeLayer(ModelLayers.PARROT)), 0.1F);
+        super(context, new ParrotModel(context.bakeLayer(ModelLayers.PARROT)), 0.1F);
         this.texture = texture;
     }
 
