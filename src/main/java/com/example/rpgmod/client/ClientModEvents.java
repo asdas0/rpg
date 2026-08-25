@@ -206,7 +206,7 @@ public class ClientModEvents {
                 ctx -> new com.example.rpgmod.client.renderer.RpgBeeRenderer<>(ctx,
                         new net.minecraft.resources.ResourceLocation(RpgMod.MOD_ID, "textures/entity/luminous_bee.png")));
         event.registerEntityRenderer(ModEntities.STAR_PARROT.get(),
-                ctx -> new com.example.rpgmod.client.renderer.RpgParrotRenderer<>(ctx,
+                ctx -> new com.example.rpgmod.client.renderer.RpgParrotRenderer(ctx,
                         new net.minecraft.resources.ResourceLocation(RpgMod.MOD_ID, "textures/entity/star_parrot.png")));
     }
 }
