@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModCreativeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
-            DeferredRegister.create(ForgeRegistries.CREATIVE_MODE_TABS, RpgMod.MOD_ID);
+                       DeferredRegister.create(ForgeRegistries.Keys.CREATIVE_MODE_TABS, RpgMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> RPG_TAB = CREATIVE_TABS.register("rpg_tab",
             () -> CreativeModeTab.builder()
