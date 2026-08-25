@@ -5,7 +5,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Slime;
-
+import net.minecraft.world.entity.Mob;
 
 /**
  * RPG Mod özel canlısı: Chaos Slime (Kaos Balçığı).
@@ -20,7 +20,7 @@ public class ChaosSlimeEntity extends Slime {
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Slime.createAttributes()
+        return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 16.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.30D)
                 .add(Attributes.ATTACK_DAMAGE, 4.0D);
