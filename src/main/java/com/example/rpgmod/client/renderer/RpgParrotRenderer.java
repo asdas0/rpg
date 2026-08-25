@@ -12,7 +12,7 @@ import net.minecraft.world.entity.animal.Parrot;
  * Vanilla model geometrisini kullanir, sadece dokusu (texture) farklidir.
  * (ParrotModel generic olmadigi icin ikinci tip parametresi sabittir.)
  */
-public class RpgParrotRenderer<T extends Parrot> extends MobRenderer<T, ParrotModel> {
+public class RpgParrotRenderer extends MobRenderer<Parrot, ParrotModel> {
 
     private final ResourceLocation texture;
 
@@ -22,7 +22,7 @@ public class RpgParrotRenderer<T extends Parrot> extends MobRenderer<T, ParrotMo
     }
 
     @Override
-    public ResourceLocation getTextureLocation(T entity) {
+    public ResourceLocation getTextureLocation(Parrot entity) {
         return this.texture;
     }
 }
