@@ -47,3 +47,12 @@ jobs:
 
       - name: Build with wrapper
         run: ./gradlew build --no-daemon
+
+      # 5) Derlenen mod .jar dosyasini "Artifacts" olarak yukler -
+      #    Actions calisma ekraninin en altinda indirme butonu olarak cikar
+      - name: Upload mod jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpgmod-jar
+          path: build/libs/*.jar
+          if-no-files-found: error
